@@ -27,9 +27,36 @@ export default function Page({ data }: PageProps<User | null>) {
   }
 
   return (
-    <div>
-      <h1>{data.tag}</h1>
-      <h1>{data.name}</h1>
+    <div class="m-5 p-1 roboto-mono">
+      <ul>
+        <li>
+          <p class="text-5xl font-bold dm-mono">{data.tag}</p>
+        </li>
+        <li>
+          <p class="text-xl text-gray-900 my-3">{data.name}</p>
+        </li>
+        <li>
+          <p text-gray-900>
+            Trophies: <span class="text-yellow-600">{data.trophies}</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            Highest trophies:{" "}
+            <span class="text-yellow-600">{data.bestTrophies}</span>
+          </p>
+        </li>
+        <li>
+          <p class="text-green-800">Wins: {data.wins}</p>
+        </li>
+        <li>
+          <p class="text-red-800">Losses: {data.losses}</p>
+        </li>
+        <li>
+          <p>All battles: {data.battleCount}</p>
+        </li>
+        <span class="text-gray-800 text-sm">Clan: {data.clan.name}</span>
+      </ul>
     </div>
   );
 }

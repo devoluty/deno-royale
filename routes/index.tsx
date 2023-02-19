@@ -19,16 +19,19 @@ export const handler: Handlers<Data> = {
 export default function Home({ data }: PageProps<Data>) {
   const { results, query } = data;
   return (
-    <div class="m-5 p-1">
+    <div class="m-5 p-1 roboto-mono">
       <form>
         <input
-          class="bg-gray-300 rounded-md mx-5 text-black p-2 text-lg"
+          class="bg-gray-300 rounded-md mx-5 text-black p-2 text-sm"
           placeholder="#"
           type="text"
           name="q"
           value={query}
         />
-        <button class="p-2 bg-blue-200 text-sm rounded-md" type="submit">
+        <button
+          class="p-2 text-red-900 bg-gray-300 text-sm rounded-md"
+          type="submit"
+        >
           Search
         </button>
       </form>
