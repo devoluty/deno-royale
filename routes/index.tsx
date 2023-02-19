@@ -19,7 +19,7 @@ export const handler: Handlers<Data> = {
 export default function Home({ data }: PageProps<Data>) {
   const { results, query } = data;
   return (
-    <div class="m-5 p-1 roboto-mono">
+    <div class="m-5 p-1">
       <form>
         <input
           class="bg-gray-300 rounded-md mx-5 text-black p-2 text-sm"

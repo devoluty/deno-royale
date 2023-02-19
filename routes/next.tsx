@@ -1,6 +1,6 @@
 export default function Next() {
   return (
-    <div class="m-5 p-1 text-sm dm-mono">
+    <div class="m-5 p-1 text-sm">
       <ol>
         <li>Compare players</li>
         <li>View recent searched players</li>
